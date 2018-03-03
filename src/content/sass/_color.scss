@@ -1,0 +1,29 @@
+$color: #FF0000;
+@function oscurecerColores($color, $mult){
+	$percent: percentage(5 * $mult/100	);
+	$color: darken($color,$percent);
+	@return $color;	
+}
+
+@function aclararColores($color, $mult){
+	$percent: percentage(5 * $mult/100);
+	$color:lighten($color,$percent);
+	@return $color;
+}
+
+@mixin generarColores(){
+  font-size: 18px;
+  @for $i from 1 through 6 {
+    
+    .box-dark-#{$i} {
+      $resp: oscurecerColores($color,$i);
+      background-color: $resp;
+    }
+  }
+    
+  @for $i from 1 through 6 {
+    .box-light-#{$i}{
+      background-color: aclararColores($color,$i);
+    }
+  }
+}

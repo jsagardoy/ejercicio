@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  margin: 1%;
+  padding: 1%; }
+
+h3 {
+  color: darkgrey;
+  font-size: 24px;
+  font-family: 'Oswald', serif;
+  text-align: center;
+  text-decoration: underline; }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 18px; }
+  .container .color {
+    width: 100px;
+    height: 100px;
+    border-style: solid;
+    border-color: black; }
+  .container .box-dark-1 {
+    background-color: #e60000; }
+  .container .box-dark-2 {
+    background-color: #cc0000; }
+  .container .box-dark-3 {
+    background-color: #b30000; }
+  .container .box-dark-4 {
+    background-color: #990000; }
+  .container .box-dark-5 {
+    background-color: maroon; }
+  .container .box-dark-6 {
+    background-color: #660000; }
+  .container .box-light-1 {
+    background-color: #ff1a1a; }
+  .container .box-light-2 {
+    background-color: #ff3333; }
+  .container .box-light-3 {
+    background-color: #ff4d4d; }
+  .container .box-light-4 {
+    background-color: #ff6666; }
+  .container .box-light-5 {
+    background-color: #ff8080; }
+  .container .box-light-6 {
+    background-color: #ff9999; }
